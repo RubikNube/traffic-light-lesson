@@ -19,6 +19,8 @@ USER root
 # Configure `Node.js`/`npm`.
 RUN npm config --global set user root
 
+# install angular CLI
+RUN npm install -g @angular/cli
 
 # Go! (And keep going.)
 CMD ["tail", "--follow", "/dev/null"]
